@@ -1,5 +1,5 @@
 # Python code to create a function called most_frequent that takes a string and prints the letters in decreasing order of frequency. Using dictionaries.
-text = 'mississippi!'
+string = 'mississippi!'
 
 
 def make_dict(x):
@@ -9,8 +9,8 @@ def make_dict(x):
     return dictionary
 
 
-def most_frequent(text):
-    letters = [letter.lower() for letter in text if letter.isalpha()]
+def most_frequent(string):
+    letters = [letter.lower() for letter in string if letter.isalpha()]
     dictionary = make_dict(letters)
     result = []
     for key in dictionary:
@@ -19,4 +19,4 @@ def most_frequent(text):
     for count, letter in result:
         print (letter, count)
 
-most_frequent(text)
+most_frequent(string)
